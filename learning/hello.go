@@ -6,6 +6,8 @@ import (
 	"math/rand"
 )
 
+var c, python, java  bool  = true, false, true
+
 func add( x int, y int)  int {
 	return x + y
 }
@@ -18,6 +20,11 @@ func swap( x , y string) (string, string) {
 	return y, x
 }
 
+func split(sum int) (x, y int) {
+	x = sum * 4 / 9
+	y = sum - x
+	return
+}
 
 func main ()  {
 	fmt.Println("Hello, Go!")
@@ -28,4 +35,8 @@ func main ()  {
 	fmt.Println(name("John", "Doe"))
 	a, b := swap("first", "second")
 	fmt.Println("Swapped:", a, b)
+	fmt.Println(split(1000))
+
+	var hello  string = "Hello, World!"
+	fmt.Println(hello, c, python, java)
 }
