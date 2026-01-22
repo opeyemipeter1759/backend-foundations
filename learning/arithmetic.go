@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	basic()
 	arithmeticCalc()
+	stringMani()
 }
 
 func arithmeticCalc() {

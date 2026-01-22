@@ -40,3 +40,12 @@ func basic ()  {
 
 	fmt.Println(hello, c, python, java, k)
 }
+
+
+func stringMani() {
+	name := "Alice"
+	age := 30
+	fmt.Printf("My name is %s and I am %d years old.\n", name, age)
+	pi := 3.14159
+	fmt.Printf("The value of pi is approximately %.2f\n", pi) // Limiting to 2 decimal place
+}
