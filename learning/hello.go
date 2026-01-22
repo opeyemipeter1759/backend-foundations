@@ -5,9 +5,6 @@ import (
 	"math"
 	"math/rand"
 )
-
-var c, python, java  bool  = true, false, true
-
 func add( x int, y int)  int {
 	return x + y
 }
@@ -26,7 +23,7 @@ func split(sum int) (x, y int) {
 	return
 }
 
-func main ()  {
+func basic ()  {
 	fmt.Println("Hello, Go!")
 	x:=16.0
 	fmt.Println("The square root of", x, "is", math.Sqrt(x))
@@ -38,5 +35,8 @@ func main ()  {
 	fmt.Println(split(1000))
 
 	var hello  string = "Hello, World!"
-	fmt.Println(hello, c, python, java)
+	var c, python, java  bool  = true, false, true
+	k:= 42
+
+	fmt.Println(hello, c, python, java, k)
 }
